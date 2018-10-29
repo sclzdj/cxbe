@@ -149,7 +149,7 @@ class Goods extends Admin
                 ['radio', 'status', '状态', '必选', ['0' => '下架', '1' => '上架'],'1'],
                 ['text', 'sort', '排序','','100'],
             ])
-            ->setFormData($goods)
+            ->setFormData($formData)
             ->fetch();
     }
     /**
