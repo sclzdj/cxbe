@@ -2,7 +2,6 @@
 
 namespace app\project\validate;
 
-use think\Request;
 use think\Validate;
 
 class Goods extends Validate

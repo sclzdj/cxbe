@@ -1,0 +1,514 @@
+.index-header{width: 100%; overflow: hidden;  height: 0.9rem; position: relative}
+.header-search{width: 3.8rem; margin: auto; position: relative}
+.header-search3{width: 4.8rem; margin: auto; position: relative}
+.header-search input.ibnpt{width: 100%; height: 0.6rem; border:1px solid #dfdfdf; border-radius: 0.6rem; padding-left: 0.2rem; font-size: 0.26rem; color:#666; margin-top:0.15rem}
+.header-search3 input.ibnpt{width: 100%; height: 0.6rem; border:0; border-radius: 0.6rem; padding-left: 0.2rem; font-size: 0.26rem; color:#666; margin-top:0.15rem; background: #f3f3f3}
+.header-search input.bot{width: 0.3rem; height: 0.3rem; background: url(../images/icon-sou.png) no-repeat center; background-size: cover; border:0; position: absolute; right: 0.2rem; top:0.3rem}
+.top-City{left: 0.2rem; line-height: 0.9rem; position: absolute; top:0}
+.top-City span{color:#333333; font-size: 0.3rem; background: url(../images/icon-jt.png) no-repeat right center; background-size: 0.31rem 0.16rem; padding-right: 0.38rem}
+.top-City2 span{color:#333333; font-size: 0.3rem; background: url(../images/icon-jt2.png) no-repeat right center; background-size: 0.31rem 0.16rem; padding-right: 0.38rem}
+.top-map{position: absolute; right:1.1rem; top:50%; transform: translateY(-50%)}
+.top-map img{width: 0.44rem}
+.top-info{position: absolute; right:.4rem; top:50%; transform: translateY(-50%)}
+.top-info img{width: 0.43rem; height: 0.47rem}
+.top-info i{background: #edb802; font-size: 0.24rem; color:#fff; width: 0.38rem; height: 0.38rem; border-radius: 100%; position: absolute; right: -0.2rem; top:-0.1rem; line-height: 0.38rem; text-align: center; }
+.banner{width: 100%; overflow: hidden}
+.banner ul li img{display: block; width: 100%}
+.index-classification{width: 100%}
+.index-classification ul li{width: 20%; float: left; text-align: center; padding-top:0.2rem}
+.index-classification ul li a img{height: 0.68rem; display: block; margin: auto}
+.index-classification ul li a span{display: block; padding: 0.1rem; color:#666; font-size: 0.28rem}
+.index-font2{padding: 0.2rem 0}
+.index-titel{padding: 0.35rem 0; text-align: center}
+.index-titel span{color:#333333; font-size: 0.36rem;}
+.index-titel p{color:#7b7b7b; font-size: 0.24rem; text-transform: uppercase}
+.look_Teacher{padding: 0 0.3rem;border-bottom:0.1rem solid #f6f6f6; padding-bottom: 0.2rem}
+.look_Teacher ul li{margin-bottom: 0.2rem}
+.look_Teacher ul li select{width: 100%; border:1px solid #c3c3c3; border-radius: 0.7rem; line-height: 0.7rem; color:#666; font-size: 0.26rem; padding-left: 0.2rem; background: url(../images/jt.png) no-repeat 95% center; background-size: 0.13rem 0.26rem}
+.look_Teacher ul li input{width: 100%; background: #028bd6; color:#fff; font-size: 0.3rem; text-align: center; border-radius: 0.7rem; line-height: 0.7rem;border:0}
+.Teacher_index{width: 100%; border-bottom: 0.1rem solid #f6f6f6; padding: 0 0.2rem; overflow: hidden; padding-bottom: 0.2rem}
+.Teacher_index ul li{width:48%; border:1px solid #e5e5e5;height: 3.2rem; float: left; margin-right: 4%}
+.Teacher_index ul li img{width: 1.3rem; height: 1.3rem; border-radius: 100%; display: block; margin:0.2rem auto}
+.Teacher_index ul li span{width: 100%; text-align: center; display: block; font-size: 0.3rem; color:#028bd6}
+.Teacher_index ul li p{text-align: center}
+.Teacher_index ul li p i{font-size: 0.31rem; color:#edb802; display: inline-block; margin: 0 0.02rem}
+.Teacher_index ul li p i.on{color:#d0d0d0}
+.Teacher_index ul li b{display: block; text-align: center; font-size: 0.24rem; color:#666666; font-weight: inherit; margin-top:0.1rem}
+.Teacher_lsit2box{width: 100%; padding: 0.2rem;}
+.Teacher_lsit2box ul li{overflow: hidden; border-bottom: 1px solid #dcdcdc; padding: 0.2rem 0}
+.Teacher_lsit2box ul li img{width: 2rem; height: 2rem; float: left; border-radius: 5px; }
+.Teacher_lsit2box ul li p{float: left; width: calc(100% - 2rem); padding-left: 0.2rem}
+.Teacher_lsit2box ul li p span{display: block}
+.Teacher_lsit2box ul li p span.s-1 em{font-size: 0.3rem; color:#333333}
+.Teacher_lsit2box ul li p span.s-1 i{float: right; color:#333; font-size: 0.24rem}
+.Teacher_lsit2box ul li p span.s-1 b{font-weight: inherit; font-size: 0.3rem; color:#fd2121; margin-right: 0.1rem}
+.Teacher_lsit2box ul li p span.s-2 i{font-size: 0.31rem; color:#edb802; display: inline-block; margin: 0 0.02rem}
+.Teacher_lsit2box ul li p span.s-2 i.on{color:#d0d0d0}
+.Teacher_lsit2box ul li p span.s-3{color:#666666; font-size: 0.24rem; line-height: 0.32rem; padding-top:0.1rem}
+.Teacher_lsit2box ul li p span.s-4 em{background: #f5f5f5; border-radius: 5px; padding: 0.05rem 0.2rem; display: inline-block; color:#999999; font-size: 0.24rem; margin-top:0.1rem; margin-right: 0.1rem}
+.Teacher_lsit2box ul li:last-child{border-bottom: 0}
+.footer-beia{width: 100%; overflow: hidden; font-size: 0.24rem; line-height: 0.7rem; text-align: center; color:#bbbbbb; background: #f6f6f6}
+.suspension{width: 100%; height: 1.2rem; background: #3b3b3b;position: relative}
+.suspension img.img1{width: 0.7rem; height: 0.7rem; border-radius:5px; float: left; margin-left: 0.4rem; margin-top:0.25rem}
+.suspension p{width: calc(100% - 1.1rem);float: left; padding-left: 0.2rem; padding-top:0.25rem}
+.suspension span{display: block; color:#fff; font-size: 0.24rem}
+.suspension em{display: block; color:#d0d0d0; font-size: 0.24rem; padding-top:0.1rem}
+.suspension i{position: absolute; right: 0.1rem; top:0.1rem; width: 0.2rem; display: block}
+.suspension i img{width: 100%; display: block}
+.suspension a{color:#d0d0d0; font-size: 0.26rem; border:1px solid #d0d0d0; padding: 0.1rem 0.3rem; position: absolute; right: 0.6rem; top:50%; transform: translateY(-50%); border-radius: 20px;}
+.footer-nav{width: 100%; height: 1rem; background: #fff; position: fixed; left: 0; bottom: 0;z-index: 999}
+.footer-nav ul li{width: 20%; text-align: center; float: left; padding-top:0.1rem}
+.footer-nav ul li em{width: 100%; height: 0.47rem; display: block}
+.footer-nav ul li span{color:#838383; font-size: 0.24rem; padding-top:0.05rem; display: block}
+.footer-nav ul li:nth-child(1) em{background: url(../images/icon-1.png) no-repeat center; background-size: auto 0.47rem; }
+.footer-nav ul li:nth-child(2) em{background: url(../images/icon-2.png) no-repeat center; background-size: auto 0.47rem; }
+.footer-nav ul li:nth-child(4) em{background: url(../images/icon-3.png) no-repeat center; background-size: auto 0.47rem; }
+.footer-nav ul li:nth-child(5) em{background: url(../images/icon-4.png) no-repeat center; background-size: auto 0.47rem; }
+.footer-nav ul li:nth-child(3) a{display: block; width: 1.25rem; margin: auto; height: 1.25rem; box-shadow: 0 2px 5px #d9edf7; border-radius: 100%; margin-top:-0.5rem; background: #fff;padding-top:0.15rem}
+.footer-nav ul li:nth-child(3) a img{width: 0.6rem; display: block; margin: auto}
+
+.footer-nav ul li:nth-child(1).on em{background: url(../images/icon1.png) no-repeat center; background-size: auto 0.47rem; }
+.footer-nav ul li:nth-child(2).on em{background: url(../images/icon2.png) no-repeat center; background-size: auto 0.47rem; }
+.footer-nav ul li:nth-child(4).on em{background: url(../images/icon3.png) no-repeat center; background-size: auto 0.47rem; }
+.footer-nav ul li:nth-child(5).on em{background: url(../images/icon4.png) no-repeat center; background-size: auto 0.47rem; }
+.footer-nav ul li.on span{color:#028bd6}
+.login-logo img{width: 1.45rem; margin:1rem auto; display: block; }
+.login-form{padding: 0 0.6rem}
+.login-form ul li{border-bottom: 1px solid #a6a6a6; padding: 0.2rem 0;margin-bottom:0.5rem}
+.login-form ul li i{color:#028bd6; font-size: 0.4rem; display: inline-block; padding-left: 0.1rem}
+.login-form ul li input{color:#666; font-size: 0.26rem;border:0; width: 4rem; padding-left: 0.2rem}
+.login-form ul li input.bot{background: #007aff; color:#fff; font-size: 0.3rem; border-radius: 5px; line-height: 0.8rem; width: 100%; box-shadow: 0 10px 10px #ccedff}
+.login-form ul li span{color:#028bd6; font-size: 0.28rem; float: right}
+.login-form ul li:last-child{border-bottom: 0}
+.Account{text-align: center; color:#028bd6;  font-size: 0.28rem;}
+.Account a{ color:#028bd6;  font-size: 0.28rem;}
+.Account a i{font-size: 0.32rem}
+.Third_party{width: 100%; position: relative; text-align: center; margin-top:0.3rem}
+.Third_party:after{content: ''; width: 100%; height: 1px; background: #e5e5e5; position: absolute; left: 0; top:50%; }
+.Third_party span{color:#333333; font-size: 0.26rem; background: #fff; display: inline-block; padding: 0 0.2rem; position: relative; z-index: 2}
+.login-hird p{overflow: hidden; width: 100%; padding:0 0.6rem; margin-top:0.3rem}
+.login-hird p a{display: block; width: 33.3%; float: left; text-align: center;}
+.login-hird p a img{width: 0.84rem; height: 0.84rem; display: block; margin: auto}
+.login-hird span{display: block; padding:0.3rem 0; color:#333333; font-size: 0.24rem; text-align: center; }
+.login-hird span a{font-size: 0.24rem; color:#007aff}
+.my-header{width: 100%; height:0.9rem; background: #fff; position: relative; }
+.my-header p{text-align: center; color:#333333; font-size: 0.36rem; line-height: 0.9rem}
+.my-header span.Return{position: absolute; left: 0.2rem; top:0; height: 100%; line-height: 0.9rem}
+.my-header span.Return i{color:#000000; font-size: 0.45rem}
+.my-header2{background: #028bd6;}
+.my-header2 p{color:#fff}
+.my-header2 a{position: absolute; top:0; height: 100%; }
+.my-header2 a.a1{left:0.2rem; }
+.my-header2 a.a1 i{display: table-cell; height: 0.9rem; vertical-align: middle}
+.my-header2 a.a1 img{width: 0.47rem; }
+.my-header2 span.Return i{color:#fff}
+.my-header2 a.a2{right:0.2rem; }
+.my-header2 a.a2 i{display: table-cell; height: 0.9rem; vertical-align: middle}
+.my-header2 a.a2 img{width: 0.47rem; }
+.my-header3{background: none}
+.my-headerobg{background: #028bd6;padding: 0.2rem 0; padding-left: 0.3rem; overflow: hidden}
+.my-headerobg img{width: 1.15rem; height: 1.15rem; border-radius: 100%; border:2px solid #69c5f8; float: left;}
+.my-headerobg p{width: calc(100% - 1.15rem); float: left; padding-left: 0.2rem}
+.my-headerobg p span{display: block; color:#fff; font-size: 0.32rem; padding-top:0.1rem}
+.my-headerobg p em{display: block; color:#fff; font-size: 0.28rem; padding-top:0.1rem}
+
+.map-teacher{position: fixed; bottom: 0; height: calc(100% - 0.9rem); }
+.mapbox{height: 100%;}
+.mapbox img{width: 100%; height: 100%}
+.map-search{width: 100%; top:0.1rem; left: 0; position: absolute; text-align: center; padding: 0 0.2rem}
+.map-search p{width: 6rem; position: relative}
+.map-search p input.ite{width: 100%; background: #ffffff; height: 0.8rem; color:#666; font-size: 0.3rem; padding-left: 0.2rem; border-radius: 0.8rem; border:0}
+.map-search p input.bot{width: 0.4rem; height: 0.4rem; position: absolute; top:50%; transform: translateY(-50%); right: 0.3rem; background: url(../images/sou2.png) no-repeat center; background-size: cover; border:0}
+.map_screen{position: absolute; right: 0.2rem; width: 0.8rem; height: 0.8rem; background: #007aff; border-radius: 100%; top:0; line-height: 0.8rem;color:#fff;}
+.map_screen i{ font-size: 0.45rem}
+.Mask{width: 100%; position: fixed; top:0; left: 0; background: rgba(0,0,0,0.5); height: 100%; z-index: 9999; display: none}
+.condition{width: 90%; position: fixed; top:-150%; left: 5%; z-index: 99999; background: #fff; border-radius:3px;padding: 0.2rem; transform: translateY(-50%); }
+.condition2{top:50%;transition: all 0.8s}
+.condition ul li span{width: 0.9rem; color:#333; font-size: 0.26rem;  float: left; line-height: 0.7rem}
+.condition ul > p{width: 100%; padding-bottom: 0.32rem; color:#333; font-size: 0.3rem; text-align: center; border-bottom: 1px solid #ccc}
+.condition ul li{padding-top:0.3rem}
+.condition ul li.na_1 label{margin-right: 0.4rem; color:#666; font-size: 0.26rem; line-height: 0.7rem}
+.condition ul li.na_1 .demo--radioInput{margin-right: 0.05rem; margin-top:-5px;}
+.condition ul li.na_1 .demo--radioInput i{display: none; width: 0.29rem; height: 0.29rem; color:#007aff; font-size: 0.32rem}
+.condition ul li.na_1 .demo--radio:checked + .demo--radioInput i{display: block}
+.condition ul li.na_2 select{width: 60%; height: 0.7rem; color: #666; font-size: 0.24rem; border:1px solid #ccc; padding-left: 0.2rem; background: url(../images/icon-jt2.png) no-repeat 95% center; background-size: 0.31rem 0.16rem}
+.condition ul li.na_1 p{float:left; width: calc(100% - 0.9rem)}
+.condition ul li.na_3{padding-left: 0.9rem; padding-bottom: 0.3rem; padding-top:0.2rem; overflow: hidden}
+.condition ul li.na_3 input{background: #007aff; border-radius: 5px; color:#fff; font-size: 0.3rem; line-height: 0.7rem; width: 3rem; border:0}
+.condition ul li.na_4{position: absolute; top:-0.3rem; right: 0.2rem; color:#666; font-size: 0.4rem}
+
+.login-form22 ul li input.ter2{display: none}
+.login-form22 ul li img{width: 0.42rem; float: right; margin-top:0.12rem; margin-right: 0.1rem}
+.order-top{padding: 0 0.2rem}
+.order-top span{padding-left:0.45rem; background: url(../images/my-icon1.png) no-repeat left center; background-size: 0.3rem 0.38rem; line-height: 0.7rem; display: inline-block; font-size: 0.3rem; color:#333333}
+.order-top span em{display: inline-block; padding-left: 0.1rem; color:#666; font-size: 0.24rem}
+.order-top a{float: right; color:#999999; font-size: 0.28rem; line-height: 0.7rem}
+.order-top a i{float: right; font-size: 0.35rem; padding-top:0.05rem; margin-left: 0.1rem}
+.order-cnav{margin-top:0.2rem}
+.order-cnav ul li{width: 33.3%; position: relative; padding-bottom:0.3rem; float: left;}
+.order-cnav ul li img{display: block; margin: auto; height: 0.7rem}
+.order-cnav ul li span{display: block; text-align: center; color:#333; font-size: 0.28rem; padding-top:0.1rem}
+.order-cnav ul li:after{content: ''; width: 1px; background: #e6e6e6; height: 80%; top: 0; right: 0; position: absolute}
+.order-cnav ul li:last-child:after{width: 0}
+.my-navlist{margin-top:0.2rem; }
+.my-navlist ul li{line-height: 1rem; border-bottom: 1px solid #e0e0e0;padding: 0 0.2rem; height: 1rem; background: #fff}
+.my-navlist ul li i{float: right; color:#666; font-size: 0.35rem}
+.my-navlist ul li img{width: 0.44rem;display: block}
+.my-navlist ul li span{float: left}
+.my-navlist ul li em{float: left;padding-left: 0.2rem; color:#333333; font-size: 0.3rem}
+.my-navlist ul li span b{display: table-cell; vertical-align: middle; height: 0.9rem}
+.my-navlist ul li:nth-child(3){margin-bottom: 0.2rem; border:0}
+.my-navlist ul li:nth-child(5){margin-bottom: 0.2rem; border:0}
+.my-navlist ul li:last-child{margin-top: 0.2rem; margin-bottom:0.5rem; border:0; background: none; }
+.my-navlist ul li a.a1{color:#fff; background: #007aff; display: block; text-align: center; font-size: 0.3rem; border-radius: 3px; margin-bottom: 0.9rem}
+.login-form2{padding-top:0.3rem}
+.Teacher_indexbox{position: relative}
+.morm{position: absolute; right: 0.5rem; top:0.8rem;; padding-right: 0.3rem; background: url(../images/index-ixon.png) no-repeat right center; background-size:0.14rem 0.26rem; }
+.morm a{color:#007aff; font-size: 0.28rem}
+.titelbox{text-align: center; line-height: 0.8rem; font-size: 0.3rem; color:#666666}
+.upload_Certificates ul{padding: 0 0.2rem}
+.upload_Certificates ul li span{display: block; line-height: 0.8rem; color:#999; font-size: 0.3rem; text-align: center}
+.upload_Certificates ul.ul_1 li{width: 3.1rem; border-radius: 5px; overflow: hidden; position: relative}
+.upload_Certificates ul.ul_1 li img{width: 100%}
+.upload_Certificates ul.ul_1 li input{width: 100%; height: 100%; position: absolute; top:0; left: 0; opacity: 0}
+.upload_Certificates ul.ul_2{border-top:0.2rem solid #f6f6f6}
+.upload_Certificates ul.ul_2 p{text-align: center; line-height: 0.8rem; font-size: 0.3rem; color:#666666}
+.upload_Certificates ul.ul_2 li{width: 3.1rem; border-radius: 5px; overflow: hidden; position: relative; margin: auto}
+.upload_Certificates ul.ul_2 li img{width: 100%}
+.upload_Certificates ul.ul_2 li input{width: 100%; height: 100%; position: absolute; top:0; left: 0; opacity: 0}
+.order-nav ul li{width: 25%; float: left; text-align: center; line-height: 1rem;}
+.order-nav ul li a{color:#8a8a8a; font-size: 0.28rem}
+.order-nav ul li.on a{color:#007aff; display: inline-block; padding: 0 0.2rem; border-bottom: 2px solid #007aff}
+.order-list{margin-top:0.2rem}
+.order-list ul li{padding: 0.2rem; overflow: hidden; border-bottom: 1px solid #dcdcdc}
+.order-list ul li:last-child{border-bottom: 0}
+.order-list ul li img{width: 1.45rem; height: 1.45rem; border-radius: 10px; float: left;}
+.order-list ul li p{width: calc(100% - 1.45rem); padding-left: 0.2rem; float: left; position: relative}
+.order-list ul li p span.s_1 em{font-size: 0.3rem; color:#333333; display: inline-block; margin-right: 0.1rem}
+.order-list ul li p span.s_1 i{font-size: 0.28rem; color:#edb802; margin: 0 0.03rem }
+.order-list ul li p span.s_1 i.on{color:#d0d0d0}
+.order-list ul li p span.s_2{color:#666666; font-size: 0.28rem; display: block; padding-top:0.1rem}
+.order-list ul li p span.s_3{color:#999; font-size: 0.28rem; padding-top:0.2rem; display: block}
+.order-list ul li p span.s_4{color:#007aff; position: absolute; right:0; line-height: 1.45rem; top:0; font-size: 0.28rem}
+.order-list ul li p span.s_5{color:#fff; position: absolute; right:0;  top:50%; font-size: 0.28rem; padding: 0.1rem 0.2rem; background: #007aff; text-align: center; border-radius: 20px; transform: translateY(-50%)}
+.order-list ul li p span.s_6{position: absolute; right:0;  top:50%; border-radius: 20px; transform: translateY(-50%)}
+.order-list ul li p span.s_6 img{width: 0.8rem; height: auto}
+.order-text{text-align: center; line-height: 1rem; color:#999999; font-size: 0.24rem}
+.top-h{margin-bottom: 0.2rem ;padding: 0.2rem}
+.top-h img{width: 0.8rem; height: 0.8rem; border-radius: 100%; float: left; }
+.top-h p{color:#333; font-size: 0.28rem; line-height: 0.8rem; padding-left: 0.2rem; float: left; width: calc(100% - 0.8rem)}
+.score{padding: 0.2rem; line-height: 0.7rem}
+.score i{font-size: 0.45rem; color:#edb802; margin: 0 0.08rem }
+.score i.on{color:#d0d0d0}
+.score span{color:#333333; font-size: 0.28rem}
+
+
+.indehzoms{margin-top: 5px; background: #fff; padding: 10px;}
+.indehzoms ul li.ipt1{position: relative}
+.indehzoms ul li.ipt1 textarea{border:1px solid #bfbfbf; padding: 0.1rem; color:#666; font-size: 0.24rem; line-height: 0.32rem; width: 100%; height: 3rem}
+.indehzoms ul li.ipt1 span{position: absolute; left: 0.1rem; bottom: 0.2rem;width:1.2rem; height:1.1rem;  color:#696969; text-align: center; font-size: 0.24rem}
+.indehzoms ul li.ipt1 input{position: absolute; right: 0; top: 0; width:1.2rem; height:1.1rem; opacity: 0}
+.indehzoms ul li.ipt1 img{width:100%; display: block; margin: auto; margin-top:0.1rem; margin-bottom: 0.1rem;}
+.indehzoms ul li.ipt2 span{border:1px solid #999999; color:#999999; font-size: 0.24rem; display: inline-block; border-radius: 0.5rem; padding: 0.1rem 0.2rem; margin-top:0.2rem; margin-right: 0.1rem;}
+.indehzoms ul li.ipt2 span.on{background: #028bd6; color:#fff;  border:1px solid #028bd6}
+.indehzoms ul li.ipt3{padding: 0.2rem  0.2rem 0.1rem 0.2rem; color:#a5a5a5;margin-top:0.1rem; font-size: 0.24rem}
+.Tjiao{margin: 0.3rem 0; width: 100%; text-align: center;}
+.Tjiao input{width: 60%; background: #028bd6; color:#fff; font-size: 0.32rem; border:0; line-height: 0.9rem; border-radius: 0.9rem;}
+.obg-img{width: 100%; overflow: hidden; position: relative}
+.imgbox ul li img{display: block; width: 100%}
+.boxop{position: absolute; bottom: 0.2rem; left: 0; text-align: center; width: 100%; z-index: 9}
+.boxop span{background: #b5b5b5;margin: 0 0.04rem; width: 0.2rem; height: 0.2rem}
+.boxop span.swiper-pagination-bullet-active{width: 0.22rem; height: 0.22rem; background: #fff}
+.order-datatext{padding: 0.2rem}
+.order-datatext ul li.titel-te span{color:#333; font-size: 0.32rem; margin-right: 0.2rem;}
+.order-datatext ul li.titel-te em{color:#028bd6; font-size: 0.28rem}
+.order-datatext ul li.titel-te p i{color:#edb802; font-size: 0.4rem; margin: 0 0.05rem}
+.order-datatext ul li.titel-te p i.on{color:#d0d0d0}
+.order-datatext ul li.two_text{color:#999; font-size: 0.28rem; display: block; padding-top:0.2rem}
+.order-datatext ul li.two_text a{color:#999; font-size: 0.28rem}
+.order-datatext ul li.Price{padding-top:0.2rem}
+.order-datatext ul li.Price span{color:#fd2121; font-size: 0.323rem}
+.order-datatext ul li.Price em{color:#666666; font-size: 0.24rem}
+.Speed_progress{margin-top:0.2rem}
+.speed-titel{padding: 0.2rem 0 0 0.2rem; color:#333333; font-size: 0.3rem}
+.speed-titel span{color:#fd2121}
+.Speed_progress_show{padding: 0 0.2rem; background: #fff; padding-bottom: 0.2rem}
+.Speed_progress_show ul li{width: 23%; height:0.7rem; position:relative; float: left; text-align: center; line-height: 0.7rem; color: #666; font-size: 0.3rem; border:1px solid #c9c9c9; margin-top:0.2rem; margin-right: 2.66%}
+.Speed_progress_show ul li:nth-child(4n){margin-right: 0}
+.Speed_progress_show ul li.on{background: #c9c9c9; color:#fff}
+.Speed_progress_show ul li.on1{background: #edb802; color:#fff;border:1px solid #edb802; }
+.Speed_progress_show ul li.on:after{content: ''; width: 0.6rem; height: 0.5rem; background: url(../images/ywc.png) no-repeat center; background-size:cover; position: absolute; right:-0.1rem; top:-0.1rem}
+.button-bot{width: 100%; padding: 0.2rem}
+.button-bot p{color:#999999; text-align: left; font-size: 0.24rem}
+.button-bot a.a1{color:#fff; background: #007aff; width: 100%; display: block; line-height: 0.7rem; border-radius: 0.7rem; text-align: center; font-size: 0.3rem; margin-top:0.4rem}
+.button-bot a.a2{color:#fff; background: #c5c5c5; width: 100%;  line-height: 0.7rem; border-radius: 0.7rem; text-align: center; font-size: 0.3rem;margin-top:0.4rem; display: none}
+.wallet-box{width: 100%; height: 5.3rem; background: url(../images/top-bg.jpg) no-repeat center; background-size:cover; position: relative}
+.comprehensive{text-align: center; width: 100%; padding-top:0.3rem}
+.comprehensive span{ font-size: 0.28rem; color:#fffefe}
+.comprehensive p{color:#fffefe; font-size: 0.75rem; padding: 0.2rem 0}
+.comprehensive a{display: block; width: 1.7rem; line-height: 0.5rem; color:#fff; border:1px solid #fff; border-radius: 0.5rem; text-align: center; margin: auto; font-size: 0.24rem}
+.Detailed{position: absolute; bottom: 0; width: 100%; padding: 0.25rem 0; background: rgba(2055,255,255,0.2); left: 0; overflow: hidden}
+.Detailed ul li{width: 50%; float: left; text-align: center; position: relative}
+.Detailed ul li p{color:#fff; font-size: 0.38rem;}
+.Detailed ul li span{color:#fff; font-size: 0.24rem}
+.Detailed ul li:first-child:after{width: 1px; background: rgba(255,255,255,0.2); height: 100%; position: absolute; right: 0; top:0; content: '';}
+.Profit-lsit{margin-top:0.2rem; background: #fff}
+.tProfit_titel{line-height: 0.9rem; border-bottom: 1px solid #dcdcdc}
+.tProfit_titel span{color:#333333; padding-left: 0.2rem; font-size: 0.3rem}
+.tProfit_titel a{float: right; margin-right:0.2rem; color:#028bd6; font-size: 0.3rem; background: url(../images/wallet-lsit.jpg) no-repeat right center; background-size: 0.4rem 0.38rem; padding-right: 0.5rem}
+
+.Profit-lsitdata ul{padding:0 0.2rem; }
+.Profit-lsitdata ul li{overflow: hidden; width: 100%; padding: 0.1rem 0}
+.Profit-lsitdata ul li img{width: 0.7rem; height: 0.7rem; border-radius: 100%; float: left; }
+.Profit-lsitdata ul li p{width: calc(100% - 0.7rem); padding-left: 0.2rem; position: relative; height: 0.7rem; float: left;}
+.Profit-lsitdata ul li span{color:#333; font-size: 0.28rem; display: block}
+.Profit-lsitdata ul li em{color:#999; font-size: 0.24rem; display: block}
+
+.Profit-lsitdata ul li i{position: absolute; right: 0; height:100%; line-height: 0.7rem; color:#333; font-size: 0.3rem; top:0}
+.Profit-lsitdata > p{color:#999999; padding: 0.2rem; background: #f6f6f6; text-align: center}
+.my_make ul li{position: relative}
+.my_make ul li span.s_6{color:#333333; position: absolute; right: 0.2rem; bottom: 0.2rem; font-size: 0.26rem}
+.my_make ul li a.a2{background: #007aff;color:#fff; font-size: 0.26rem; padding: 0.1rem 0.2rem; border-radius: 0.5rem; position: absolute; right: 0.1rem; top:0.2rem}
+
+.baTanchu{position: fixed; bottom: 0; left: 0; background: #fff;z-index: 9999999; width: 100%;   transform: translateY(120%);transition: all 0.5s}
+
+.bgoodsxn{border-bottom: 1px solid #cccccc; padding: 0.2rem}
+.bgoodsxn img{width:1.25rem; height:1.25rem; border-radius: 5px; float: left}
+.bgoodsxn p{float: left; width: calc(100% - 2.4rem); padding-left:0.17rem}
+.bgoodsxn p i.i_1{width: 80%; overflow: hidden; color:#333; font-size: 0.3rem;  display: block}
+.bgoodsxn p i.i_1 b{font-weight:inherit; color:#007aff;font-size: 0.24rem }
+.bgoodsxn p span.slp{color:#edb802; display: block; }
+.bgoodsxn p span.slp em{font-size: 0.24rem;margin: 0 0.03rem}
+.bgoodsxn p span.slp2{color:#333333; font-size: 0.24rem; padding-top:0.2rem; display: block}
+.bgoodsxn p span.slp2 em{color:#fd2121; font-size: 0.24rem;}
+.bgoodsxn p span.slp2 em i{color:#fd2121; font-size: 0.35rem;}
+.guige{ overflow: hidden; padding: 0 0.2rem}
+.guige p{color:#333; font-size: 0.28rem; padding: 0.2rem 0}
+.guige span{display: block; float: left; border:1px solid #a6a6a6; border-radius: 5px; width: 2rem; height: 0.7rem; text-align: center; line-height: 0.7rem; margin-right: 0.3rem;margin-bottom: 0.1rem; font-size: 0.28rem}
+.guige span.on{background: #028bd6; border:1px solid #028bd6; color:#fff}
+.shul{padding-top:0.2rem;  padding-left: 0.2rem}
+.shul p{width: 2.69rem}
+.shul p i{width: 0.62rem; height: 0.62rem; }
+.shul p i.jian{background: url(../images/jian.jpg) no-repeat center; background-size:0.62rem}
+.shul p i.jia{background: url(../images/jia.jpg) no-repeat center; background-size:0.62rem}
+.shul p input{width: 1.2rem; height: 0.62rem; background: #eeeeee;text-align: center; font-size: 0.28rem; margin: 0 5px; color:#028bd6; border: 0; border-radius: 5px}
+.shul span{font-size: 0.28rem;color:#333; line-height: 0.62rem}
+
+.nonebox{position: absolute; right: 0.1rem; top:0.1rem; width: 0.45rem; height: 0.45rem; text-align: center; line-height: 0.45rem; border-radius: 100%; }
+.nonebox i{font-size: 0.3rem; line-height: 0.41rem; color:#666}
+.Recommend-tec{color:#666666; font-size: 0.24rem; margin-left: 0.2rem; padding-top:0.25rem; background: url(../images/pre.jpg) no-repeat left bottom; background-size: 0.36rem; padding-left: 0.45rem; padding-bottom:0.02rem}
+.Explain{width: 100%; overflow: hidden; padding-top:0.2rem}
+.Explain span{background: url(../images/go.jpg) no-repeat left center; padding-left: 0.35rem; background-size: 0.3rem; margin-right: 0.2rem; font-size: 0.24rem; color:#666}
+.Price-bot{border-top:1px solid #a6a6a6; position: relative; margin-top:0.3rem}
+.Price-bot span{display: block; line-height: 0.9rem; color:#333333; font-size: 0.3rem; padding-left: 0.3rem}
+.Price-bot span em{color:#fd2121}
+.Price-bot a{position: absolute; background: #028bd6; line-height: 0.9rem; width: 2.35rem; color:#fff; font-size: 0.3rem; right: 0; top:0;text-align: center; }
+.map-navtop{width: 100%; position: absolute; top:0; left: 0; height:0.8rem; line-height: 0.8rem; background: #fff; border-top:1px solid #f6f6f6}
+.map-navtop ul li{width: 50%;float: left; text-align: center; position: relative}
+.map-navtop ul li a{color:#333; font-size: 0.3rem}
+.map-navtop ul li.on:after{content: '';width: 20%; left: 50%; top:-1px; transform: translateX(-50%); position: absolute; background: #007aff; height: 2px; border-radius: 2px;}
+.map-navtop ul li.on a{color:#007aff}
+.bottom-address{position: absolute; left:0; bottom: 0; padding: 0 0.2rem;z-index: 99;width: 100%}
+.bottom-address ul.ul-1{box-shadow: 0 5px 10px #a4b6ca}
+.bottom-address ul.ul-1 li:nth-child(1):after{width: 0.15rem; height: 0.15rem; content: ''; border-radius: 100%; background: #0d90d8; position: absolute; top:50%; left:0; transform: translateY(-50%)}
+.bottom-address ul.ul-1 li:nth-child(2):after{width: 0.15rem; height: 0.15rem; content: ''; border-radius: 100%; background: #edb802; position: absolute; top:50%; left:0; transform: translateY(-50%)}
+.bottom-address ul.ul-1 li:nth-child(1){border-bottom: 1px solid #e5e5e5}
+.bottom-address ul.ul-1{background: #fff; padding: 0 0.2rem; border-radius: 5px;}
+.bottom-address ul.ul-1 li{height: 0.8rem; position: relative}
+.bottom-address ul.ul-1 li input{display: block; line-height: 0.8rem; color:#666; font-size: 0.28rem; padding-left: 0.3rem; width: 100%; border:0}
+.bottom-address ul.ul-1 li em{display: block; line-height: 0.8rem; color:#999; font-size: 0.28rem; padding-left: 0.3rem; width: 100%; border:0; height: 0.8rem}
+.bottom-address ul.ul-1 li a{display: block; line-height: 0.8rem; color:#999; font-size: 0.28rem; padding-left: 0.3rem; width: 100%; border:0; height: 0.8rem}
+.bottom-address ul.ul-1 li em.on{color:#666}
+.bottom-address ul.ul-2{padding: 0.2rem 0; }
+.bottom-address ul.ul-2 li input{width: 100%; background: #007aff; color:#fff; line-height: 0.7rem; border-radius: 5px; border:0; font-size: 0.3rem}
+.bottom-address ul.ulop li:nth-child(1):after{width: 0}
+.bottom-address ul.ulop li:nth-child(1) img.img1{width: 0.6rem; margin-top:0.1rem; float: left;margin-right: 0.2rem}
+.bottom-address ul.ulop li:nth-child(1) img.img2{width: 0.31rem; height: 0.39rem; margin-right: 0.2rem; margin-left: 0.2rem; vertical-align: middle}
+
+.bottom-address ul.ulop li:nth-child(1) p{line-height: 0.8rem;color:#666;font-size: 0.28rem; }
+.cancel{position: absolute; height: 100%; right: 0.2rem; line-height: 0.9rem; top:0;}
+.cancel span{font-size: 0.3rem; color:#333}
+.lsit-nav{padding: 0.2rem; margin-top:0.2rem; background: #fff}
+.lsit-nav ul li{line-height: 0.6rem; color:#333333; font-size: 0.3rem; width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap}
+
+.show-my{width: 100%; overflow: hidden; padding-top:0.2rem}
+.show-my span{background: url(../images/go.jpg) no-repeat left center; padding-left: 0.35rem; background-size: 0.3rem; margin-right: 0.5rem; font-size: 0.24rem; color:#666}
+.Teacher_data{margin-top:0.2rem}
+.Teacher_plate{color:#666666; font-size: 0.28rem; line-height: 0.36rem; padding: 0 0.2rem; padding-bottom:0.3rem}
+.Teacher_plate p.plate_titel{color:#333333; font-size: 0.3rem; margin-bottom: 0.2rem; position: relative; padding-left: 0.2rem}
+.Teacher_plate p.plate_titel:after{content: ''; width: 2px; height: 100%; background: #edb802; position: absolute; left: 0; top:0}
+.Teacher_plate p.teil2{color:#333333; font-size: 0.3rem; margin-bottom: 0.2rem; position: relative; padding-left:0rem}
+.Teacher_plate p.teil2:after{content: ''; width: 0; height: 100%; background: #edb802; position: absolute; left: 0; top:0}
+.plate_more{text-align: center; padding-bottom: 0.3rem}
+.plate_more a{background: #007aff; color:#fff; font-size: 0.28rem; line-height: 0.6rem; text-align: center; padding: 0 0.3rem; border-radius:0.6rem; display: inline-block; }
+.evaluate-show{padding: 0.2rem}
+.evaluate-show .top-show-eval p{ line-height: 0.6rem; color:#333; font-size: 0.3rem;}
+.evaluate-show .top-show-eval p img{width: 0.6rem; height: 0.6rem; border-radius: 0.6rem; float: left; margin-right: 0.1rem}
+.evaluate-show .top-show-eval span{color:#666; font-size: 0.24rem; line-height: 0.6rem;}
+.evaluate-text{padding-left: 0.7rem; color:#666666; font-size: 0.26rem; line-height: 0.36rem; padding-top:0.1rem;}
+.Recommend{margin-top:0.2rem}
+.Recommend-titel{border-bottom: 1px solid #dcdcdc; padding: 0.2rem; font-size: 0.32rem; color:#333333}
+.Recommend .Teacher_lsit2box ul li:last-child{border:0}
+.bittom-bottom{position: fixed; bottom: 0; left: 0; width: 100%; height: 0.9rem; background: #007aff; line-height: 0.9rem; text-align: center}
+.bittom-bottom a{color:#fff; font-size:0.32rem; }
+.My-information{width: 100%; margin-top:0.1rem}
+.My-information ul li{border-bottom: 1px solid #f6f6f6;padding: 0 0.2rem; overflow: hidden; background:#fff url(../images/jt.png) no-repeat 7.1rem center; background-size: 0.16rem 0.29rem;}
+.My-information ul li span{float: left; width: 1.2rem; color:#333333; font-size: 0.28rem; line-height: 1rem}
+.My-information ul li em.em-1{position: relative; margin-right: 0.3rem; width: 0.7rem; height: 0.7rem; margin-top:0.15rem}
+.My-information ul li em.em-1 img{width: 0.7rem; height: 0.7rem; border-radius: 0.7rem;}
+.My-information ul li em.em-1 input{position: absolute; left: 0; top:0; width: 100%; height: 100%; opacity: 0}
+.My-information ul li input.inpbx{text-align: right; height:0.7rem; margin-top:0.15rem; border:0; color:#666; font-size: 0.26rem}
+.My-information ul li em.em-2{background: #fff; line-height: 1rem; color:#666; font-size: 0.28rem}
+.My-information ul li select.select_1{line-height: 1rem; margin-right: 0.3rem; border:0; font-size: 0.28rem; color:#666; width: 5rem;  direction: rtl;}
+.My-information ul li em.em-3{background: #fff; line-height: 1rem; color:#666; font-size: 0.28rem; margin-right: 0.3rem; height: 1rem; text-align: right; width: 5rem; display: block}
+.My-information ul li.jd{margin-top:0.1rem}
+.My-information ul li a{display: block; line-height: 1rem; font-size: 0.28rem; color:#333}
+.Sign_out a{display: block; color:#fff; font-size: 0.3rem; background: #007aff; text-align: center; line-height: 0.9rem; margin-top:0.3rem}
+.tooth{font-weight: 500}
+.Preservation_a{position: absolute; height: 100%; line-height: 0.9rem; top:0; right: 0.2rem; color:#333; font-size: 0.3rem}
+.My-information2 ul li input.input-q{width: calc(100% - 1.2rem); float: left; height: 0.7rem; margin-top:.15rem; background: #fff; border:0; padding-left: 0.3rem; color:#666; font-size: 0.26rem}
+.My-information2 ul li em.value2{width: calc(100% - 1.2rem); float: left; height: 0.7rem; margin-top:.15rem;  border:0; padding-left: 0.3rem; color:#666; font-size: 0.26rem; line-height: 0.7rem; background:#fff url(../images/jt.png) no-repeat right center; background-size: 0.16rem 0.29rem;}
+.My-information2 ul li select.select_2{width: calc(100% - 1.2rem); float: left; height: 0.7rem; margin-top:.15rem; border:0; padding-left: 0.3rem; color:#666; font-size: 0.26rem; line-height: 0.7rem; background:#fff url(../images/jt.png) no-repeat right center; background-size: 0.16rem 0.29rem;}
+.My-information2 ul li select.select_rt{ direction: rtl; padding-right: 0.3rem}
+.My-information2 ul li em.em-3{color:#028bd6}
+.My-information ul li span.pt{width: 2.3rem}
+.My-information ul li span i{color:#999; font-size: 0.28rem}
+.My-information2 ul li input.q32{width: calc(100% - 2.3rem); text-align: right}
+.My-information2 ul li input.q35{width: calc(100% - 1.2rem); text-align: right; padding-right: 0.6rem; color:#999;}
+.My-information2 ul li input.q36{width: calc(100% - 1.2rem); text-align: right; padding-right: 0.0rem; color:#666;}
+.My-information2 ul li.py em.value2{text-align: right; padding-right: 0.3rem}
+.My-information2 ul li.pr{position: relative}
+.My-information2 ul li.pr i.i-p{position: absolute; right: 0.2rem; top:0; line-height: 1.1rem; color:#999; height: 100%}
+.condition2 ul li.pdr{overflow: hidden; padding: 0.3rem 0;}
+.condition2 ul li.pdr em{width: 20%; float: left;text-align: center; color:#666; font-size: 0.3rem;padding: 0 0.1rem; margin-top:0.2rem}
+.condition2 ul li.pdr em i{display: block; line-height: 0.6rem}
+.condition2 ul li.pdr em.on i{background: #007aff; color:#fff; border-radius: 0.6rem; }
+.condition3 ul li.na_3{padding-left: 0; text-align: center}
+.text-name1{color:#666 !important; overflow: hidden; white-space: nowrap; text-overflow: ellipsis}
+.top-textvix{width: 100%; padding: 0.4rem 0.2rem; overflow: hidden}
+.top-textvix ul li{width: 33.3%; float:left; text-align: center; position: relative}
+.top-textvix ul li img{width: 0.8rem; height: 0.8rem; display: block; margin: auto}
+.top-textvix ul li p{padding-top:0.1rem; color:#666666; font-size: 0.28rem}
+.top-textvix ul li:after{content: ''; width: 0.18rem; height: 0.41rem; position: absolute; background: url(../images/ct.png) no-repeat center; background-size: cover; top:50%; right: 0; transform: translateY(-50%)}
+.top-textvix ul li:last-child:after{width: 0}
+
+.reservation{height: 1.1rem; background: #fff; box-shadow: 0 0 10px #eee; position: fixed; width: 100%; bottom: 0; left: 0;}
+.reservation a.a1{width: 0.5rem; margin-left: 0.4rem; display: block; float: left; position: relative}
+.reservation a.a1 img{width:0.52rem; height: 0.55rem; margin-top:0.28rem}
+.reservation a.a1 i{background: #f00; position: absolute; top:0.2rem; right: -0.17rem; width: 0.35rem; height: 0.35rem; border-radius: 0.35rem; line-height: 0.35rem; color:#fff; text-align: center;}
+.reservation a.a2{background: #028cd7; color:#fff; width: 2.8rem; height: 0.8rem; margin-right:0.2rem; text-align: center; line-height: 0.8rem; border-radius: 5px; margin-top:0.15rem; font-size: 0.3rem}
+.reservation a.a3{ color:#676767; width: 2.8rem; height: 0.8rem; margin-right:0.2rem; text-align: center; line-height: 0.8rem; border-radius: 5px; margin-top:0.15rem; font-size: 0.3rem; border:1px solid #d2d2d2;}
+.login-form2 ul li{position: relative}
+.login-form2 ul li img.img-p{position: absolute; width: 2rem; height: 0.63rem; right: 0; top:0.1rem}
+.login-form2 ul li span.span-p{color:#028bd6; font-size: 0.29rem; position: absolute; right: 0; }
+.topscreen{position: relative; background: #fff; height: 1rem}
+.show-tetx{text-align: center; line-height: 1rem; color:#8a8a8a; font-size: 0.28rem}
+.show-tetx i{font-size: 0.36rem; vertical-align: middle; margin-left: 0.05rem; display: inline-block;transition: all 0.5s}
+.makr-2{width: 100%; position: fixed; bottom: 0; background: rgba(0,0,0,0.5); height: calc(100% - 1.9rem);z-index: 2;display: none}
+.none_show{position: absolute; left: 0; width: 100%; top:1rem; border-top:1px solid #f6f6f6; display: none;z-index: 3}
+.on_tetx i{transform: rotate(180deg);transition: all 0.5s}
+.Two_screening{background: #fff; margin-top:0.05rem; position: relative}
+.Two_screening ul li{width: 25%; float: left; text-align: center;}
+.Two_screening ul li span{line-height: 1rem; color:#8a8a8a; font-size: 0.28rem; }
+.Two_screening ul li span i{font-size: 0.36rem; vertical-align: middle; margin-left: 0.05rem; display: inline-block;transition: all 0.5s}
+.Two_screening ul li ol{width: 100%; height: 7rem; overflow: auto;  -webkit-overflow-scrolling: touch; position: absolute; top:1rem; text-align: left; background: #fff; border-top:1px solid #f6f6f6; display: none; left: 0}
+.Two_screening ul li ol p{overflow: hidden; line-height: 0.8rem; border-bottom: 1px solid #f6f6f6; padding: 0 0.2rem; color:#8a8a8a; font-size: 0.28rem; }
+.Two_screening ul li ol p em{width: 0.4rem; height: 0.4rem; background: url(../images/gu2.jpg) no-repeat center; background-size: cover; float: right; margin-top:0.2rem}
+.Two_screening ul li ol p.on{color:#028bd6}
+.Two_screening ul li ol p.on em{width: 0.4rem; height: 0.4rem; background: url(../images/gu1.jpg) no-repeat center; background-size: cover; float: right; margin-top:0.2rem}
+.goods-list-show1{width: 100%; padding: 0.2rem;}
+.goods-list-show1 ul li{width: 48%; margin-right: 4%; margin-bottom: 0.3rem; border:1px solid #e5e5e5; height: 4.54rem; background: #fff; float: left;}
+.goods-list-show1 ul li:nth-child(2n){margin-right: 0}
+.goods-list-show1 ul li img.img1{width: 100%; display: block; height: 2.4rem}
+.goods-list-show1 ul li p.p1{padding: 0.1rem; text-align: right; overflow: hidden}
+.goods-list-show1 ul li p.p1 span{color:#333333; font-size: 0.3rem; float: left}
+.goods-list-show1 ul li p.p1 img{height: 0.26rem; margin-left: 0.12rem; margin-top:0.1rem}
+.goods-list-show1 ul li p.p2{color:#666666; font-size: 0.24rem; line-height: 0.38rem; padding: 0 0.1rem}
+.goods-list-show1 ul li p.p3{padding:0.2rem 0.1rem}
+.goods-list-show1 ul li p.p3 span{color:#fd2121; font-size: 0.32rem}
+.goods-list-show1 ul li p.p3 span i{font-size: 0.24rem;color:#666666}
+.goods-list-show1 ul li p.p3 em{float: right; text-align: right; padding-top:0.06rem}
+.goods-list-show1 ul li p.p3 em b{font-weight: inherit; color:#edb802; font-size: 0.32rem; margin-right: 0.05rem}
+
+
+.Centenbox{position: fixed; top:1rem; left:0; width: 100%; height:calc(100% - 2rem);}
+.Cent-leftnav{width: 1.85rem; position: absolute; left: 0; top:0; height: 100%; -webkit-overflow-scrolling:touch; overflow: auto;text-align: center;z-index: 99}
+.Cent-leftnav ul li{height: 1.1rem; line-height: 1.1rem; background: #fff}
+.Cent-leftnav ul li a{display: block; color:#999999; font-size: 0.28rem}
+.cenboxzlist{width: 100%;  height:100%; padding-left: 2rem;  -webkit-overflow-scrolling:touch; overflow: auto;}
+.Cent-leftnav ul li.on{border-right:0; background: #f6f6f6}
+.Cent-leftnav ul li.on a{color:#028bd6}
+.show-tetx p.fl{color:#333; font-size: 0.3rem; padding-left: 0.2rem}
+.show-tetx p.fr{margin-right: 0.2rem}
+.none_show2{margin-top:-1px; overflow: hidden; height: 1.6rem; }
+.none_show2 ul{overflow: hidden}
+.none_show2 ul li{width: 25%}
+.obg-box{margin-bottom: 0.1rem; overflow: hidden}
+.blovck i{transform: rotate(-90deg); transition: all 0.5s; vertical-align: bottom}
+.blovck2 i{transform: rotate(-0deg); transition: all 0.5s; vertical-align: bottom}
+.news_list ul li{padding: 0.2rem; border-bottom: 1px solid #dcdcdc; overflow: hidden}
+.news_list ul li img{width: 1rem; height: 1rem; border-radius: 100%; float: left;}
+.news_list ul li p{width: calc(100% - 1rem);; float: left; padding-left: 0.2rem}
+.news_list ul li p span.sp1{color:#333333; font-size: 0.34rem; display: block}
+.news_list ul li p span.sp2{ color:#999999; font-size: 0.28rem; line-height: 0.38rem; padding-top:0.1rem}
+.newslist-nav{line-height: 1rem;background: #fff; margin-bottom: 0.1rem; overflow: hidden; width: 100%}
+.newslist-nav ul li{text-align: center; }
+.newslist-nav ul li a{color:#8a8a8a; font-size: 0.28rem; display: block}
+.newslist-nav ul li.on a{border-bottom: 2px solid #007aff; color:#007aff}
+
+.news_list2 ul li img{width: 2.1rem; height: 1.5rem; float: left; border-radius: 8px;}
+.news_list2 ul li p{width: calc(100% - 2.1rem);; float: left; padding-left: 0.2rem}
+.news_list2 ul li p span.sp2{text-align: right; padding-top:0.2rem; display: block}
+.index-border2{border-top:0.2rem solid #f6f6f6}
+.News-index{width: 100%; padding: 0.2rem}
+.News-index ul li{padding: 0.2rem 0; border-bottom: 1px solid #f6f6f6; overflow: hidden}
+.News-index ul li img{width: 1.9rem; height: 1.25rem; overflow: hidden; border-radius: 5px; float: right; }
+.News-index ul li p{float: left; width: calc(100% - 1.9rem); padding-right: 0.2rem; height: 1.25rem; position: relative}
+.News-index ul li p span{color:#333333; font-size: 0.3rem; line-height: 0.2rem}
+.News-index ul li p em{display: block; color:#999999; font-size: 0.24rem; position: absolute; bottom: 0; left: 0}
+
+.cancel2 span{color:#fff}
+.from-box{padding: 0.2rem}
+.from-box ul li textarea{background: #eeeeee; border-radius: 5px; padding: 0.2rem; color:#666; font-size: 0.24rem; line-height: 0.35rem; width: 100%; height: 2rem; border:0}
+.from-box ul li input{width: 100%; background: #eee; margin-top:0.2rem; border:0; padding: 0.2rem;color:#666; font-size: 0.24rem; border-radius: 2px;,}
+.from-box ul p{padding-top:0.1rem; color:#666666; font-size: 0.28rem}
+.News-data{padding: 0.2rem}
+.mews-titel{color:#333333; font-size: 0.4rem; }
+.mews-titel p{color:#999999; font-size: 0.24rem; padding-top:0.1rem}
+.Cententbvox-data{padding-top:0.3rem; font-size: 0.26rem; line-height: 0.38rem; color:#333333; }
+.index-titel-bot{position: relative; margin-bottom: 0.3rem}
+.index-titel-bot:after{content: ''; width: 0.3rem; height: 0.025rem; background: #028bd6; border-radius: 0.025rem; position: absolute; left: 50%;bottom: 0; margin-left: -0.15rem}
+.p-boe img{max-width: 30%; margin-top:0.2rem}
+.a-href{position: absolute; top:0; right: 0.2rem; width: 0.34rem; height: 0.3rem; }
+.a-href img{width: 100%; display: block; margin-top:0.3rem}
+.top-text_itep{padding: 0.2rem; color:#333333; font-size: 0.3rem}
+.top-text_itep span{color:#666; background: #dcdcdc; padding:0.1rem 0.2rem; font-size: 0.26rem; float: right; border-radius: 0.5rem}
+.top-text_itep em{padding: 0.1rem 0}
+.my-nav{overflow: hidden; padding: 0 0.2rem}
+.my-nav a{display: block; float: left; width: 24%; line-height: 0.6rem; text-align: center; color:#333; font-size: 0.28rem; background: #dcdcdc; border-radius: 3px;margin-bottom: 0.2rem; margin-right: 1.3%; position: relative;}
+.my-nav a:nth-child(4n){margin-right: 0}
+.my-nav a i{ position: absolute; height: 100%; width: 100%; left: 0; top:0;display: none;}
+.my-nav a i img{width:0.3rem; position:absolute; right: 0; top:0;)}
+.newslist-nav2 ul li.on a{border: 0}
+.Bosanebox{position: relative}
+.newslist-nav2{width: 70%}
+.Bsaone{width: 30%; position: absolute; right: 0; top:0;text-align: center; padding-top:0.2rem}
+.Bsaone a{color:#666; background: #dcdcdc; padding:0.1rem 0.2rem; font-size: 0.26rem; border-radius: 0.5rem;; display: inline-block}
+.tl-1{background: rgba(0,0,0,0.5); position: fixed; top:0; left: 0; width: 100%; height: 100%;z-index: 999999; }
+.tl-1 img{width: 3.91rem; height: 2.62rem; float: right; margin-right: 0.9rem; display: block}
+.tl-1 a{display: block; width: 2.8rem; height:0.8rem; border:1px solid #fff; margin: auto; border-radius: 5px; color:#fff; font-size: 0.3rem; line-height: 0.78rem; text-align: center; margin-top:4rem }
+
+
+.tl-2{background: rgba(0,0,0,0.5); position: fixed; top:0; left: 0; width: 100%; height: 100%;z-index: 999999;display: none}
+.tl-2 img{width: 4.02rem; height: 3.06rem;display: block; margin: auto; position: fixed; bottom: 0.1rem;left: 50%; margin-left: -2.01rem}
+.tl-2 a{display: block; width: 2.8rem; height:0.8rem; border:1px solid #fff; margin: auto; border-radius: 5px; color:#fff; font-size: 0.3rem; line-height: 0.78rem; text-align: center; margin-top:6rem }
+
+
+
+
+
+
+
+
+
+

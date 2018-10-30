@@ -113,7 +113,7 @@ trait Api
      * 获取当前请求完整的url
      * @return string
      */
-    public function _curPageURL(){
+    protected function _curPageURL(){
         $pageURL = 'http';
         if (isset($_SERVER["HTTPS"]) && $_SERVER["HTTPS"] == "on"){
             $pageURL .= "s";
@@ -129,7 +129,7 @@ trait Api
     /**
      * 接口请求次数限制
      */
-    public function _limitRequestRate()
+    protected function _limitRequestRate()
     {
         $api_limit_num=config('custom.api_limit_num');
         $ip=Request::instance()->ip();
@@ -151,5 +151,51 @@ trait Api
             'create_time'=>$timestamp,
             'update_time'=>$timestamp,
         ]);
+    }
+    /**
+     * 错误返回
+     * @param $data
+     */
+    protected function _error($data){
+        if(isset($data['status_code'])){
+            $status_code=$data['status_code'];
+            unset($data['status_code']);
+        }else{
+            $status_code=400;
+        }
+        if(isset($data['message'])){
+            $message=$data['message'];
+        }else{
+            $message='Bad Request';
+        }
+        //开启接口日志记录
+        if(config('custom.api_log_on')){
+            Db::name('request_logs')->where('id',$this->_request_log_id)->update([
+                'response_code'=>$status_code,
+                'response'=>json_encode(['message'=>$message,'status_code'=>$status_code],JSON_UNESCAPED_UNICODE)
+            ]);
+        }
+        throw new \think\exception\HttpException($status_code, $message);
+    }
+    /**
+     * 成功返回
+     * @param $data
+     * @return \think\response\Json
+     */
+    protected function _success($data){
+        if(isset($data['status_code'])){
+            $status_code=$data['status_code'];
+            unset($data['status_code']);
+        }else{
+            $status_code=200;
+        }
+        //开启接口日志记录
+        if(config('custom.api_log_on')){
+            Db::name('request_logs')->where('id',$this->_request_log_id)->update([
+                'response_code'=>$status_code,
+                'response'=>json_encode($data,JSON_UNESCAPED_UNICODE)
+            ]);
+        }
+        return json($data,$status_code);
     }
 }

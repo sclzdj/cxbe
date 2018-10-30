@@ -12,7 +12,6 @@ use app\admin\controller\Admin;
 use app\common\builder\ZBuilder;
 use app\project\model\Category as CategoryModel;
 use app\project\model\Goods as GoodsModel;
-use think\Cache;
 use think\Db;
 use think\Request;
 

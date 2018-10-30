@@ -30,7 +30,7 @@ class AuthUsers extends Base
         if (!in_array(Request::instance()->action(),$except)){
             $check=$this->_check(true);
             if(!is_numeric($check)){
-                throw new \think\exception\HttpException($check['status_code'], $check['message']);
+                $this->_error($check);
             }
         }
     }
@@ -50,13 +50,13 @@ class AuthUsers extends Base
             $this->_password.'.require'=>'密码不能为空',
         ]);
         if (!$validate->check($data)) {
-            return json([
+            $this->_error([
                 'message'=>$validate->getError(),
                 'status_code'=>400,
-            ],400);
+            ]);
         }
         $attempt=$this->_attempt($username,$password,true);
-        return json($attempt,$attempt['status_code']);
+        return $this->_success($attempt);
     }
     /**
      * 退出接口
@@ -69,12 +69,12 @@ class AuthUsers extends Base
                 'is_logout'=>1,
                 'update_time'=>time(),
             ]);
-            return json([
+            return $this->_success([
                 'message'=>'退出成功',
                 'status_code'=>200
             ]);
         }else{
-            return json($check,$check['status_code']);
+            $this->_error($check);
         }
     }
     /**

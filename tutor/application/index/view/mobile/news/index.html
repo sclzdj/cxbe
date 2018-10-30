@@ -1,0 +1,93 @@
+{extend name="../application/index/view/mobile/layout/master.html" /}
+{block name="head_static"}
+<link rel="stylesheet" type="text/css" href="__STATIC__/index/mobile/css/reset.css">
+<link rel="stylesheet" type="text/css" href="__STATIC__/index/mobile/css/style.css">
+<link rel="stylesheet" type="text/css" href="__STATIC__/index/mobile/css/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_857481_llyy8yca1ud.css">
+{/block}
+{block name="head_script"}{/block}
+{block name="content"}
+{include file="../application/index/view/mobile/layout/header_1.html" /}
+<div class="newslist-nav">
+    <ul class="swiper-wrapper">
+        <li class="swiper-slide {if condition="$category_id==''"}on{/if}"><a href="{:url('index/news/index')}">全部</a> </li>
+        {volist name='categorys' id='category'}
+        <li class="swiper-slide {if condition="$category['id']==$category_id"}on{/if}"><a href="{:url('index/news/index',['category_id'=>$category['id']])}">{$category['name']}</a> </li>
+        {/volist}
+    </ul>
+</div>
+<div class="news_list news_list2 fff">
+    <ul id="data_list">
+        {volist name='news' id='item'}
+        <li onclick="window.location='{:url('index/news/read',['id'=>$item['id']])}'">
+            <img src="{:get_file_path($item['pic'])}">
+            <p>
+                <span class="sp1 y-2">{$item['title']}</span>
+                <span class="sp2 y-1">发布时间：{$item['create_time']|date="y-m-d",###}</span>
+            </p>
+        </li>
+        {/volist}
+    </ul>
+</div>
+<p id="data_load" style="color:#ccc;border: 1px solid #ccc;font-size: 14px;padding: 5px 10px;width: 95px;margin:20px auto;display: none;text-align: center;">正在加载...</p>
+<textarea id="lastItem" style="display: none;">{php}echo json_encode(array_pop($news));{/php}</textarea>
+{/block}
+{block name="foot_static"}
+<script src="__STATIC__/index/mobile/js/jquery.js"></script>
+<script src="__STATIC__/index/mobile/js/jquery-mian.js"></script>
+<script src="__STATIC__/index/mobile/js/swiper-4.3.3.jquery.min.js"></script>
+<script src="__STATIC__/index/mobile/js/LArea.js"></script>
+<script src="__STATIC__/index/mobile/js/LAreaData2.js"></script>
+{/block}
+{block name="foot_script"}
+<script>
+    var swiper = new Swiper('.newslist-nav', {
+        slidesPerView: 5,
+    });
+    $(window).scroll(function() {
+        //$(document).scrollTop() 获取垂直滚动的距离:最小值为0，最大值：文档高度-可视化窗口高度
+        //$(document).scrollLeft() 这是获取水平滚动条的距离
+        //alert("垂直滚动条位置："+$(document).scrollTop()+"--"+$(window).height());
+        if ($(document).scrollTop() <= 0) {
+            //alert("滚动条已经到达顶部为0");
+        }
+        /**
+         *$(document).height():文档的高度
+         *$(window).height()：可视域的高度：窗口的大小：根据浏览窗口的大小变化
+         *判断底部:文档高度<=滚动条垂直高度+可视窗口的高度
+         * */
+        if ( $(document).scrollTop() >= $(document).height() - $(window).height()) {
+            //alert("滚动条已经到达底部为" + $(document).scrollTop());
+            if($('#data_load').html()=='正在加载...' && $('#data_load').css('display')=='none'){
+                $('#data_load').show();
+                $.ajax({
+                    type:'POST',
+                    url:"{:url('index/news/index',['category_id'=>$category_id])}",
+                    data:{lastItem: JSON.parse($('#lastItem').val())},
+                    dataType:'JSON',
+                    complete:function(XHR, TS){
+                        $status_code=XHR.status;
+                        $data=XHR.responseText;
+                        if($status_code>=200 && $status_code<=299){
+                            $data=JSON.parse($data);
+                            if(!jQuery.isEmptyObject($data)){
+                                var html='';
+                                $($data).each(function(k,v){
+                                    html+='<li onclick="window.location=\''+v.news_url+'\'"><img src="'+v.pic_url+'"><p><span class="sp1 y-2">'+v.title+'</span> <span class="sp2 y-1">发布时间：'+v.create_time_str+'</span></p></li>';
+                                });
+                                $('#data_load').hide();
+                                $('#data_list').append(html);
+                                $('#lastItem').val(JSON.stringify($data.pop()));
+                            }else{
+                                $('#data_load').html('已经没有了');
+                            }
+                        }else{
+                            alert($data);
+                        }
+                    }
+                });
+            }
+        }
+    });
+</script>
+{/block}
