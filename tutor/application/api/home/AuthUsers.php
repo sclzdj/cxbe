@@ -56,6 +56,9 @@ class AuthUsers extends Base
             ]);
         }
         $attempt=$this->_attempt($username,$password,true);
+        if($attempt['status_code']!=200){
+            $this->_error($attempt);
+        }
         return $this->_success($attempt);
     }
     /**

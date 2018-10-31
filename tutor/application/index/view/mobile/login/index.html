@@ -1,0 +1,74 @@
+{extend name="../application/index/view/mobile/layout/master.html" /}
+{block name="head_static"}
+<link rel="stylesheet" type="text/css" href="__STATIC__/index/mobile/css/reset.css">
+<link rel="stylesheet" type="text/css" href="__STATIC__/index/mobile/css/style.css">
+<link rel="stylesheet" type="text/css" href="__STATIC__/index/mobile/css/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_857481_p2ottej1m6r.css">
+{/block}
+{block name="head_script"}
+<style>
+    .login-form input{background-color: #f6f6f6;}
+</style>
+{/block}
+{block name="content"}
+<div class="login-logo">
+    <img src="__STATIC__/index/mobile/images/nav-logo.png">
+</div>
+<div class="login-form">
+    <ul>
+        <li><i class="iconfont icon-zhanghao"></i><input type="text" name="user" placeholder="用户名/手机号"></li>
+        <li><i class="iconfont icon-mima"></i><input type="password" name="password" placeholder="登录密码"></li>
+        <li><input type="button" value="登录" class="bot" onclick="login()"></li>
+    </ul>
+</div>
+<div class="Account">
+    <a href="#">新用户？去注册<i class="iconfont icon-jiantou1"></i></a>
+</div>
+<div class="Third_party">
+    <span style="background-color: #f6f6f6;">其他方式登录</span>
+</div>
+<div class="login-hird">
+    <p>
+        <a href="#">
+            <img src="__STATIC__/index/mobile/images/icon-wx.png">
+        </a>
+        <a href="#">
+            <img src="__STATIC__/index/mobile/images/icon-qq.png">
+        </a>
+        <a href="#">
+            <img src="__STATIC__/index/mobile/images/icon-wap.png">
+        </a>
+    </p>
+    <span>登录即代表您已同意<a href="#">《同城好家教隐私政策》</a> </span>
+</div>
+{/block}
+{block name="foot_static"}
+<script src="__STATIC__/index/mobile/js/jquery.js"></script>
+<script src="__STATIC__/index/mobile/js/jquery-mian.js"></script>
+<script src="__STATIC__/index/mobile/js/swiper-4.3.3.jquery.min.js"></script>
+{/block}
+{block name="foot_script"}
+<script>
+    function  login() {
+        var user=$('.login-form input[name="user"]').val();
+        var password=$('.login-form input[name="password"]').val();
+        $.ajax({
+            type:'POST',
+            url:"{:url('index/login/index')}",
+            data:{user: user,password:password},
+            dataType:'JSON',
+            complete:function(XHR, TS){
+                status_code=XHR.status;
+                responseText=XHR.responseText;
+                if(TS=='success'){
+                    responseText=JSON.parse(responseText);
+                    alert(responseText.message);
+                    window.location="{:url('index/user/index')}";
+                }else{
+                    alert(responseText);
+                }
+            }
+        });
+    }
+</script>
+{/block}

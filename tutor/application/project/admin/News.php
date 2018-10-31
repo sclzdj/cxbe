@@ -127,7 +127,7 @@ class News extends Admin
         $formData=$news;
         $formData['price']=number_format($formData['price']/100,2,'.','');
         return ZBuilder::make('form')
-            ->setPageTitle('新增新闻')
+            ->setPageTitle('编辑新闻')
             ->setUrl(url('edit',['id'=>$id]))
             ->addFormItems([
                 ['hidden','id'],

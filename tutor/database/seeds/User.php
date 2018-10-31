@@ -16,18 +16,36 @@ class User extends Seeder
     {
         \think\Db::execute('truncate table '.config('database.prefix').'users');
         for($i=0;$i<50;$i++){
-            $insert=['username'=>random(mt_rand(2,10)),'nickname'=>zh_random(mt_rand(2,6)),'password'=>random(323),'status'=>mt_rand(0,1)];
+            $insert=[
+                'username'=>random(mt_rand(5,10)),
+                'identity'=>0,
+                'head_img'=>mt_rand(1,10),
+                'sex'=>mt_rand(0,1),
+                'birthday'=>date('Y-m-d','14'.random(8,'number')),
+                'mobile'=>'1'.random(10,'number'),
+                'qq'=>random(mt_rand(5,11),'number'),
+                'wechat'=>random(mt_rand(2,10)),
+                'email'=>random(mt_rand(2,10)).'@'.random(mt_rand(2,5)).'.com',
+                'personality_sign'=>zh_random(mt_rand(2, 20)),
+                'city'=>zh_random(mt_rand(2, 8)),
+                'address'=>zh_random(mt_rand(2, 20)),
+                'occupation'=>zh_random(mt_rand(2, 20)),
+                'hobby'=>zh_random(mt_rand(2, 20)),
+                'speciality'=>zh_random(mt_rand(2, 50)),
+                'password'=>random(323),
+                'status'=>mt_rand(0,1),
+            ];
             \app\project\model\User::create($insert);
         }
         $user = \app\project\model\User::find(1);
         $user->username    = 'sclzdj';
-        $user->nickname    = '四川阆中';
+        $user->mobile    = '18353621790';
         $user->password    = md5(md5('sclzdj').config('custom.password_hash'));
         $user->status=1;
         $user->save();
         $user = \app\project\model\User::find(2);
         $user->username    = 'dujun';
-        $user->nickname    = '杜生';
+        $user->mobile    = '17381090721';
         $user->password    = md5(md5('dujun').config('custom.password_hash'));
         $user->status=0;
         $user->save();

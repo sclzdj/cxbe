@@ -21,7 +21,12 @@ class User extends Model
      * 字段限制
      * @return Category
      */
-    public static function fieldLimit(){
-        return self::field('id,username,nickname,status,create_time,update_time');
+    public static function fieldLimit($expect=''){
+        $fields=['id','username','identity','head_img','sex','birthday','mobile','qq','wechat','email','personality_sign','city','address','occupation','hobby','speciality','status','create_time','update_time'];
+        if($expect!==''){
+            $expect=is_array($expect)?$expect:explode(',',$expect);
+            $fields=array_diff($fields,$expect);
+        }
+        return self::field($fields);
     }
 }

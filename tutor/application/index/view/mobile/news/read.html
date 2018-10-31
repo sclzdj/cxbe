@@ -98,23 +98,23 @@
                     data:{lastItem: JSON.parse($('#lastItem').val())},
                     dataType:'JSON',
                     complete:function(XHR, TS){
-                        $status_code=XHR.status;
-                        $data=XHR.responseText;
-                        if($status_code>=200 && $status_code<=299){
-                            $data=JSON.parse($data);
-                            if(!jQuery.isEmptyObject($data)){
+                        status_code=XHR.status;
+                        responseText=XHR.responseText;
+                        if(TS=='success'){
+                            responseText=JSON.parse(responseText);
+                            if(!jQuery.isEmptyObject(responseText)){
                                 var html='';
-                                $($data).each(function(k,v){
+                                $(responseText).each(function(k,v){
                                     html+='<li><a href="'+v.news_url+'"><p class="fl"><span>'+v.title+'</span><em>'+v.author+'&nbsp;&nbsp;&nbsp;'+v.create_time_str+'</em></p><img src="'+v.pic_url+'"></a></li>';
                                 });
                                 $('#data_load').hide();
                                 $('#data_list').append(html);
-                                $('#lastItem').val(JSON.stringify($data.pop()));
+                                $('#lastItem').val(JSON.stringify(responseText.pop()));
                             }else{
                                 $('#data_load').html('已经没有了');
                             }
                         }else{
-                            alert($data);
+                            alert(responseText);
                         }
                     }
                 });

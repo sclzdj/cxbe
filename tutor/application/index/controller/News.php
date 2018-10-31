@@ -29,7 +29,6 @@ class News extends Base
      */
     public function index($category_id='')
     {
-        $page_title='新闻列表';
         $map=[];
         $where='';
         $lastItem=Request::instance()->post('lastItem/a');
@@ -58,6 +57,7 @@ class News extends Base
             }
             return $this->_success($news);
         }else{
+            $page_title='新闻列表';
             return view('mobile/news/index',compact('page_title','news','categorys','category_id'));
         }
 
@@ -68,7 +68,6 @@ class News extends Base
      */
     public function read($id='')
     {
-        $page_title='新闻详情';
         $news=NewsModel::fieldLimit()->where(['status'=>1,'id'=>$id])->find();
         if(!Request::instance()->isAjax() && !$news){
             return $this->error('请求错误');
@@ -87,6 +86,9 @@ class News extends Base
             }
             return $this->_success($hot_recomment_news);
         }else{
+            //点击数+1
+            NewsModel::where('id',$id)->setInc('click');
+            $page_title='新闻详情';
             return view('mobile/news/read',compact('page_title','news','hot_recomment_news'));
         }
     }

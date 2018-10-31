@@ -100,7 +100,7 @@ class Category extends Admin
         $info = CategoryModel::get($id);
         // 使用ZBuilder快速创建表单
         return ZBuilder::make('form')
-            ->setPageTitle('编辑节点')
+            ->setPageTitle('编辑分类')
             ->addFormItem('hidden', 'id')
             ->addFormItems([
                 ['select', 'pid', '父级分类', '所属上级分类', CategoryModel::getCategoryTree($id, '')],
