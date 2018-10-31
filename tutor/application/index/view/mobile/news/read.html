@@ -68,6 +68,7 @@
 <script src="__STATIC__/index/mobile/js/swiper-4.3.3.jquery.min.js"></script>
 <script src="__STATIC__/index/mobile/js/LArea.js"></script>
 <script src="__STATIC__/index/mobile/js/LAreaData2.js"></script>
+<script src="__STATIC__/libs/layer/layer.js"></script>
 {/block}
 {block name="foot_script"}
 <script>
@@ -114,7 +115,7 @@
                                 $('#data_load').html('已经没有了');
                             }
                         }else{
-                            alert(responseText);
+                            layer.msg(responseText,{time: 3000});
                         }
                     }
                 });

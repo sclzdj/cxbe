@@ -11,36 +11,22 @@
 
 namespace app\index\controller;
 
-use think\captcha\Captcha;
 
 /**
- * 前台首页控制器
+ * 前台用户控制器
  * @package app\index\controller
  */
-class Index extends Base
+class User extends Login
 {
     public function index()
     {
-        return '主页';
+        $page_title='个人中心';
+        return view('mobile/user/index',compact('page_title'));
     }
-
-    /**
-     * 验证码
-     * @return mixed
-     */
-    public function captcha()
+    public function setInfo()
     {
-        $config = [
-            // 验证码字体大小
-            'fontSize' => 30,
-            // 验证码位数
-            'length' => 4,
-            // 关闭验证码杂点
-            'useNoise' => true,
-            //集合
-            'codeSet' => '1234567890',
-        ];
-        $captcha = new Captcha($config);
-        return $captcha->entry();
+        $user=$this->_auth_user();
+        $page_title='个人中心-信息设置';
+        return view('mobile/user/setInfo',compact('page_title','user'));
     }
 }

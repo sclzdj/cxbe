@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <title>{$page_title}</title>
+    {block name="head_static"}
+    <link rel="stylesheet" type="text/css" href="__STATIC__/index/mobile/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="__STATIC__/index/mobile/css/style.css">
+    <link rel="stylesheet" type="text/css" href="__STATIC__/index/mobile/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_857481_fcvcarjop5b.css">
+    {/block}
+    {block name="head_script"}{/block}
+</head>
+<body class="f6f6f6">
+{block name="content"}
+<div class="my-header">
+    <p>信息设置</p>
+    <span class="Return"><i class="iconfont icon-fanhui"></i></span>
+</div>
+<div class="My-information">
+    <ul>
+        <li><span>头像</span><em class="em-1 fr"><input type="file"><img src="{:get_file_path($user.head_img)}"> </em></li>
+        <li><span>用户名</span><input type="text" value="{$user.username}" class="fr inpbx"></li>
+        <li><span>身份</span><em class="fr em-2">{if condition='$user.identity eq 1'}教师{else/}学生{/if}</em></li>
+        <li><span>性别</span><select class="select_1 fr"><option {if condition='$user.sex eq 1'}selected{/if}>男</option><option {if condition='$user.sex eq 0'}selected{/if}>女</option></select></li>
+        <li><span>生日</span><em class="fr em-3" id="demo1">{$user.birthday}</em></li>
+        <li class="jd"><a href="#">账户与安全</a> </li>
+        <li class="jd"><a href="#">个性设置</a> </li>
+        <li><a href="#">联系方式</a> </li>
+        <li class="jd"><a href="#">授课设置</a> </li>
+        <li><a href="#">资质信息</a> </li>
+
+    </ul>
+</div>
+<div class="Sign_out"><a href="#">确认修改</a></div>
+{/block}
+{block name="foot_static"}
+<script src="__STATIC__/index/mobile/js/jquery.js"></script>
+<script src="__STATIC__/index/mobile/js/jquery-mian.js"></script>
+<script src="__STATIC__/index/mobile/js/swiper-4.3.3.jquery.min.js"></script>
+<script src="__STATIC__/index/mobile/js/datePicker.js"></script>
+{/block}
+{block name="foot_script"}
+<script>
+    $(function(){
+        function GetDateStr(AddDayCount) {
+            var dd = new Date();
+            dd.setDate(dd.getDate() + AddDayCount);//获取AddDayCount天后的日期
+            var y = dd.getFullYear();
+            var m = dd.getMonth() + 1;//获取当前月份的日期
+            var d = dd.getDate();
+            var mi = dd.getMinutes();
+            return y+"-"+m+"-"+d+"-"+mi;
+        }
+        //生日
+        var calendar = new datePicker();
+        calendar.init({
+            'trigger': '#demo1', /*按钮选择器，用于触发弹出插件*/
+            'textval':'.em-3',//如果有这个内名可以返回为txet；没有返回为val
+            'type': 'date',/*模式：date日期；datetime日期时间；time时间；ym年月；*/
+            'minDate':'1900-1-1',/*最小日期*/
+            'maxDate':GetDateStr(0) + '',/*最大日期*/
+            'onSubmit':function(){
+                /*确认时触发事件*/
+                var theSelectData=calendar.value;
+            },
+            'onClose':function(){
+                /*取消时触发事件*/
+            }
+        });
+    });
+</script>
+{/block}
+</body>
+</html>

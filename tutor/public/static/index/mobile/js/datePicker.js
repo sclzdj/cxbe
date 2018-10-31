@@ -799,7 +799,7 @@ window.datePicker = (function() {
                 var date_dd = parseInt(Math.round(_self.gearDate.querySelector(".date_dd").getAttribute("val"))) + 1;
                 date_dd = date_dd > 9 ? date_dd : '0' + date_dd;
                 if(_self.textval){
-                    $(_self.textval).text((date_yy % passY + _self.minY) + " 年 " + date_mm + " 月 " /*+ date_dd+" 日 "*/)
+                    $(_self.textval).text((date_yy % passY + _self.minY) + "-" + date_mm + "-" + date_dd)
                 }else {
                     _self.trigger.value = (date_yy % passY + _self.minY) + " 年 " + date_mm + " 月 " + date_dd+" 日 ";
                 }

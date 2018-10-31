@@ -83,15 +83,10 @@ class User extends Admin
         if (Request::instance()->isPost()){
             $data = $this->request->post('', null, 'trim');
             // 验证
-            $result = $this->validate($data, 'app\project\validate\User');
+            $validate=new \app\project\validate\User();
+            $result = $validate->scene('add')->check($data);
             // 验证失败 输出错误信息
-            if(true !== $result) $this->error($result);
-            if(UserModel::where(['mobile',$data['username']])->find()){
-                $this->error('该手机号已被其它用户注册成用户名了');
-            }
-            if(UserModel::where(['username',$data['mobile']])->find()){
-                $this->error('该用户名已被其它用户注册成手机号了');
-            }
+            if(true !== $result) $this->error($validate->getError());
             $data['password']=md5(md5($data['password']).config('custom.password_hash'));
             UserModel::create($data);
             $this->success('新增成功','index');
@@ -99,9 +94,8 @@ class User extends Admin
         return ZBuilder::make('form')
             ->setPageTitle('新增用户')
             ->addFormItems([
-                ['text:12|12|6|6', 'username', '用户名','必填，长度5-10位'],
+                ['text:12|12|6|6', 'username', '用户名','必填，长度5-16位'],
                 ['select:12|12|6|6', 'identity', '身份','必选',['0'=>'学生','1'=>'老师'],'0'],
-                ['text', 'password', '登录密码','必填，长度5-18位'],
                 ['image', 'head_img', '头像',''],
                 ['radio:12|12|6|6', 'sex', '性别','',['0' => '女', '1' => '男'],'0'],
                 ['date:12|12|6|6', 'birthday', '生日','', '', 'yyyy-mm-dd'],
@@ -115,6 +109,7 @@ class User extends Admin
                 ['text:12|12|6|6', 'occupation', '职业', '长度1-20位'],
                 ['text:12|12|6|6', 'hobby', '兴趣爱好', '长度1-20位'],
                 ['textarea', 'speciality', '特长', '长度1-50位'],
+                ['text', 'password', '登录密码','必填，长度5-18位'],
                 ['radio:12|12|6|6', 'status', '状态', '', ['0' => '隐藏', '1' => '显示'],'1'],
             ])
             ->fetch();
@@ -133,12 +128,6 @@ class User extends Admin
             $result = $validate->scene('edit')->check($data);
             // 验证失败 输出错误信息
             if(true !== $result) $this->error($validate->getError());
-            if(UserModel::where(['mobile',$data['username'],'id'=>['neq',$data['id']]])->find()){
-                $this->error('该手机号已被其它用户注册成用户名了');
-            }
-            if(UserModel::where(['username',$data['mobile'],'id'=>['neq',$data['id']]])->find()){
-                $this->error('该用户名已被其它用户注册成手机号了');
-            }
             if($data['password']!=''){
                 $data['password']=md5(md5($data['password']).config('custom.password_hash'));
             }else{
@@ -157,9 +146,8 @@ class User extends Admin
             ->setUrl(url('edit',['id'=>$id]))
             ->addFormItems([
                 ['hidden','id'],
-                ['text:12|12|6|6', 'username', '用户名','必填，长度5-10位'],
+                ['text:12|12|6|6', 'username', '用户名','必填，长度5-16位'],
                 ['select:12|12|6|6', 'identity', '身份','必选',['0'=>'学生','1'=>'老师'],'0'],
-                ['text', 'password', '登录密码','不填写则不修改密码，长度5-18位'],
                 ['image', 'head_img', '头像',''],
                 ['radio:12|12|6|6', 'sex', '性别','',['0' => '女', '1' => '男'],'0'],
                 ['date:12|12|6|6', 'birthday', '生日','', '', 'yyyy-mm-dd'],
@@ -173,6 +161,7 @@ class User extends Admin
                 ['text:12|12|6|6', 'occupation', '职业', '长度1-20位'],
                 ['text:12|12|6|6', 'hobby', '兴趣爱好', '长度1-20位'],
                 ['textarea', 'speciality', '特长', '长度1-50位'],
+                ['text', 'password', '登录密码','不填写则不修改密码，长度5-18位'],
                 ['radio:12|12|6|6', 'status', '状态', '', ['0' => '隐藏', '1' => '显示'],'1'],
             ])
             ->setFormData($formData)
